@@ -1,0 +1,14 @@
+
+@use '../util' as *;
+/* this rule is needed here as well,
+to use the rem()styles*/
+
+.toggle { 
+
+    &__button {
+        width: rem(16);
+        height: rem(16);
+        border-radius: 50%;
+        background-color: var(--toggle);
+    }
+}

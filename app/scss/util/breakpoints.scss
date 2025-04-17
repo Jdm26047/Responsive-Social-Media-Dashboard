@@ -1,0 +1,51 @@
+//faster way to load in media queries, Using  @mixin
+//starts with @mixin breakpoint
+//Has Parameter kinda like a function, used to load simple styles 
+// easier to update for future because uses single vs numerous iterations of (sizes) i.e
+// @mixin loads reusable code you want to use multiple times in code base
+// @mixin wont generate any CSS on its own, its a SASS thing
+
+//map-get is like an array, object
+
+// 640px, 1150px, 1400px
+$breakpoints-up: (
+	'medium': '40em',
+	'large': '71.875em',
+	'xlarge': '87.5em',
+);
+
+// 639px, 1149px, 1399px
+$breakpoints-down: (
+	'small': '39.9375em',
+	'medium': '71.8125em',
+	'large': '87.4375em',
+);
+
+@mixin breakpoint($size) {
+	@media (min-width: map-get($breakpoints-up, $size)) {
+		@content;
+	}
+}
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}
+
+//Example
+// in SCSS a mixin looks like
+/*
+    h1 {
+    @include breakpoint(large) {
+            font-size: 3rem;
+    }
+}
+
+// in just CSS it looks like
+    @media (min-width: 87.5em) {
+    h1 {
+            font-size: 3rem;
+    }
+}
+    */

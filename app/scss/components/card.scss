@@ -1,0 +1,11 @@
+// test styles
+
+/*to use rem() styles here, 
+need to @use util styles*/
+
+@use '../util' as *;
+// namespacing ??
+
+.card {
+    padding: rem(20);
+}

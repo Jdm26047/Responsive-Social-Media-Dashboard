@@ -1,2 +1,8 @@
 @use 'globals';
-@use 'components' ;
+@use 'components';
+
+/* not using @use to call utils folder, 
+because of the use of sass mixins and 
+functions var used */ 
+
+

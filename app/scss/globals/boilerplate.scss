@@ -1,0 +1,16 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+// ensures padding is included in the total width. not in addition too.
+// content-box is another option
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: o;
+    padding: 0;
+    font-family: var(--font-inter);
+}

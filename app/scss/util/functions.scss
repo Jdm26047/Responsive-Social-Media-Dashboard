@@ -1,0 +1,38 @@
+/*
+@use "sass:math";
+
+// Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+@function rem($pixels, $context: 16) {
+	@return (math.div($pixels, $context)) * 1rem;
+}
+por example
+…an em is equal to the size of the font that applies to the parent of the element in question.
+ If you haven’t set the font size anywhere on the page,
+ then it is the browser default, 
+which is probably 16px.
+So by default 1em = 16px, and 2em = 32px.
+
+If you still prefer to think in px, 
+but like the benefits of em, 
+no need have your calculator handy, 
+you can let Sass do the work for you. 
+There are a variety of ways to calculate ems with Sass.
+
+Inline math:
+
+h1 {
+  font-size: (32 / 16) * 1em;
+}
+
+Result:
+
+h1 {
+  font-size: 2em;
+}
+*/
+
+// Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+
+@function rem($pixels, $context: 16)  {
+    @return ($pixels /$context) * 1rem; 
+}
