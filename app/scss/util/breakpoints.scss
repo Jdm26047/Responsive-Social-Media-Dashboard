@@ -8,6 +8,8 @@
 //map-get is like an array, object
 
 // 640px, 1150px, 1400px
+// 640px, 950px, 1400px
+
 $breakpoints-up: (
 	'medium': '40em',
 	'large': '71.875em',
@@ -15,6 +17,8 @@ $breakpoints-up: (
 );
 
 // 639px, 1149px, 1399px
+// 640px, 949px, 1400px
+
 $breakpoints-down: (
 	'small': '39.9375em',
 	'medium': '71.8125em',
@@ -22,13 +26,13 @@ $breakpoints-down: (
 );
 
 @mixin breakpoint($size) {
-	@media (min-width: map-get($breakpoints-up, $size)) {
+	@media (min-width: map.get($breakpoints-up, $size)) {
 		@content;
 	}
 }
 
 @mixin breakpoint-down($size) {
-	@media (max-width: map-get($breakpoints-down, $size)) {
+	@media (max-width: map.get($breakpoints-down, $size)) {
 		@content;
 	}
 }
@@ -49,3 +53,6 @@ $breakpoints-down: (
     }
 }
     */
+	// https://webhint.io/docs/user-guide/hints/hint-disown-opener/
+	// https://sass-lang.com/documentation/breaking-changes/import/
+	// https://sowft.com/blog/fixing-global-built-in-functions-are-deprecated-error-in-dart-sass/
