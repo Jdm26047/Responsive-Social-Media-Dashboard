@@ -5,12 +5,16 @@ html {
 
 // ensures padding is included in the total width. not in addition too.
 // content-box is another option
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
     box-sizing: inherit;
 }
 
 body {
-    margin: o;
+    margin: 0;
     padding: 0;
     font-family: var(--font-inter);
+    background: var(--dark-bg);
+    color: var(--dark-text2);
 }
