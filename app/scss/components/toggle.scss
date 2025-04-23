@@ -3,12 +3,39 @@
 /* this rule is needed here as well,
 to use the rem()styles*/
 
+// https://codepen.io/SaraSoueidan/pen/jpBbrq/?editors=1100
+
+
+// & means inherit from parent 
+// .toggle is the parent of this container 
+// __wrapper 
+// __background
+// __button are ALL its children
 .toggle { 
+    border: none;
+
+    &__wrapper {
+
+    }
+
+    input[type="radio"]{
+
+    }
+
+    &__background {
+
+    }
 
     &__button {
         width: rem(16);
         height: rem(16);
         border-radius: 50%;
         background-color: var(--toggle);
-    }
+    } 
+    
+    label {
+  
+    }    
 }
+   
+    

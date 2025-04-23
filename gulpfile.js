@@ -13,7 +13,7 @@ const browsersync = require('browser-sync').create();
 //sass.compiler = require('dart-sass');
 
 // Sass Task
-function scssTask() {
+async function scssTask() {
 	return src('app/scss/style.scss', { sourcemaps: true })
 		.pipe(sass())
 		.pipe(postcss([autoprefixer(), cssnano()]))
@@ -59,3 +59,6 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask); 
+
+// Build Gulp Task
+exports.build = series(scssTask, jsTask);
