@@ -28,3 +28,14 @@ Accessibility
 - Be mindful of appropriate HTML tags for screenreaders, considerate accessibility 
 
 Resources [https://scottaohara.github.io/a11y_styled_form_controls/]
+
+https://dequeuniversity.com/rules/axe/4.10/label?application=axeAPI
+
+
+https://pauledenburg.com/gulp-error-did-you-forget-to-signal-async-completion/
+
+https://www.figma.com/design/zFdSARQgNbZAvHxrOMNWn7/social-media-dashboard-with-theme-switcher?node-id=0-855&t=FuCxTmbqdWuscFoj-0
+
+READ for - Z-Index and Position Properties in relation to Radio Buttons layering [https://duckduckgo.com/?q=what+is+the+z+index&ia=web]
+
+[https://philipwalton.com/articles/what-no-one-told-you-about-z-index/]

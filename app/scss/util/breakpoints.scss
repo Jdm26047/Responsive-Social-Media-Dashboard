@@ -6,9 +6,11 @@
 // @mixin wont generate any CSS on its own, its a SASS thing
 
 //map-get is like an array, object
+//px divided by 16 = em
 
 // 640px, 1150px, 1400px
 // 640px, 950px, 1400px
+// 640px, 1110x, 1400px
 
 $breakpoints-up: (
 	'medium': '40em',
@@ -16,6 +18,7 @@ $breakpoints-up: (
 	'xlarge': '87.5em',
 );
 
+// 639px, 1149px, 1399px
 // 639px, 1149px, 1399px
 // 640px, 949px, 1400px
 
