@@ -20,10 +20,17 @@ to use the rem()styles*/
 	border: none;
 	margin: 0;
 
+	@include breakpoint-down(small) {
+		margin-top: rem(30);
+		padding: rem(20) 0 0 0;
+		text-align: left;
+		border-top: rem(1) solid var(--text-color2);
+  }	
+
   label {
     font-size: rem(14);
     font-weight: 700;
-    color: var(--toggle);
+    color: var(--text-color2);
 
     &[for='dark'] {
       line-height: rem(24);
@@ -49,7 +56,6 @@ to use the rem()styles*/
 				border: 2px solid white;
 		}
 	}
-  
 
 	&__background {
 		display:block;
