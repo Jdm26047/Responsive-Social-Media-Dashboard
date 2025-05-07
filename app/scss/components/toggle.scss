@@ -54,7 +54,7 @@ to use the rem()styles*/
 		cursor: pointer;
 		
 		&:focus ~ .toggle__button {
-			border: rem(0.015) solid var(--toggle-focus);
+			border: rem(2) solid var(--toggle-focus);
 			height: rem(17.985);
 		}
 	}
@@ -77,12 +77,12 @@ to use the rem()styles*/
     width: rem(18);
     height: rem(18);
     border-radius: 50%;
-    background-color: var(--toggle-buttton);
+    background-color: var(--toggle-button);
 		transition: all 150ms ease-in-out;
   }
 	
 	#light:checked ~ .toggle__button {
-    left: calc(100% - rem(22.985));
+    left: calc(100% - 21px);
     right: rem(3);
   }
 

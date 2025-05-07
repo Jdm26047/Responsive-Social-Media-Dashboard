@@ -77,8 +77,8 @@ need to @use util styles*/
 	&__platform {
 		display: flex;
 		justify-content: center;
-		height: (20);
 		align-items: center;	
+		height: (20);
 		margin-top: rem(5);
 		margin-bottom: rem(28);
 	}
@@ -103,7 +103,7 @@ need to @use util styles*/
 
 		// &--youtube {
 		// }
-
+		
 	}
 
 	&__username {
@@ -121,7 +121,6 @@ need to @use util styles*/
 		color: var(--text-color1);
 		font-weight: 700;
 		line-height: 1;
-		letter-spacing: rem(-2);
 		margin-bottom: rem(4);
 		
 		&--big {
